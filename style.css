@@ -35,6 +35,33 @@ nav {
   margin-right: 8px;
   margin-bottom: 8px;
   border: 1px solid rgba(0, 0, 255, 0.432);
+  background-image: linear-gradient(to left top, rgb(0, 0, 0), rgba(255, 0, 0, 0.534)), url(images/hero/main-hero.png);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.main-hero h1 {
+  float:left;
+  font-size: 150px;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+  top: -25px;
+}
+
+.main-hero h5 {
+  position: relative;
+  float: right;
+  right: 15px;
+  top: 15px;
+  font-size: 14px;
+}
+
+.main-hero:hover {
+  background-image: linear-gradient(to left top, rgb(0, 0, 0), rgba(255, 0, 0, 0.466)), url(images/hero/main-hero.png);
+  cursor: pointer;
 }
 
 .side-hero {
@@ -45,9 +72,32 @@ nav {
 
 .side-hero-each {
   flex: 0 1 50%;
-  border: 1px solid rgba(0, 0, 255, 0.432);
   width: 100%;
   margin-bottom: 8px;
+}
+
+.side-hero-1 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero/sidehero1.png);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.side-hero-2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero/sidehero2.png);
+  background-position: center;
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+.side-hero-1:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/hero/sidehero1.png);
+  cursor: pointer;
+}
+
+.side-hero-2:hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/hero/sidehero2.png);
+  cursor: pointer;
 }
 
 /******** 
@@ -75,6 +125,8 @@ Main container with major content sections
   border: 1px solid blue;
 }
 
+/* Latest news */
+
 .latest-news {
   height:500px;
   display: flex;
@@ -83,8 +135,72 @@ Main container with major content sections
 
 .article {
   flex: 0 1 25%;
-  border: 1px dotted purple;
+  padding: 10px;
 }
+
+.article h4 {
+  padding: 8px 0;
+  margin: 0;
+}
+
+.article small {
+  font-size: 14px;
+  color: gray;
+}
+
+.art-img {
+  height: 60%;
+}
+
+
+.art-img1 {
+  background-image: url(images/latest/latest1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img2 {
+  background-image: url(images/latest/latest2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img3 {
+  background-image: url(images/latest/latest3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img4 {
+  background-image: url(images/latest/latest4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img5 {
+  background-image: url(images/latest/latest5.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img6 {
+  background-image: url(images/latest/latest6.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img7 {
+  background-image: url(images/latest/latest7.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.art-img8 {
+  background-image: url(images/latest/latest8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 
 .latest-funding {
   height: 300px;
