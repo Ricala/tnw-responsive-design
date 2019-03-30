@@ -1,6 +1,10 @@
 
-body > * {
+/* body > * {
   border: 1px solid red;
+} */
+
+body {
+  font-family: 'Merriweather', serif;
 }
 
 *, *:after, *:before {
@@ -9,6 +13,11 @@ body > * {
 
 .titles {
   color: rgb(255, 67, 34);
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
+  font-size: 25px;
+  line-height: 30px;
 }
 
 /*************************************
@@ -16,7 +25,7 @@ body > * {
 **************************************/
 
 header {
-  height: 700px;
+  height: 600px;
 }
 
 nav {
@@ -26,8 +35,6 @@ nav {
   width: 100%;
   top: 0;
 }
-
-.
 
 .hero {
   display: flex;
@@ -53,7 +60,7 @@ nav {
 }
 
 .main-hero h1 {
-  font-size: 175px;
+  font-size: 150px;
   padding: 0;
   margin: 0;
   margin-left: 10px;
@@ -109,7 +116,7 @@ nav {
 }
 
 .side-hero-each > * {
-  margin: 5px 10px;
+  margin: 5px 8px;
 }
 
 .side-hero-each small {
@@ -145,10 +152,16 @@ nav {
 *********/
 
 .ad {
-  height: 250px;
+  height: 100px;
   width: 900px;
   margin: 20px auto;
+  background-image: radial-gradient(rgba(255, 0, 0, 0.788), rgba(0, 0, 0, 0.925));
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border: 2px solid red;
 }
+
 
 /*****************************************
 Main container with major content sections
@@ -160,16 +173,13 @@ Main container with major content sections
   max-width: 1050px;
 }
 
-.main-container > * {
-  /* border: 1px solid blue; */
-}
-
 /* Latest news */
 
 .latest-news {
   height:500px;
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .article {
@@ -178,12 +188,13 @@ Main container with major content sections
 }
 
 .article h4 {
+  font-size: 15px;
   padding: 8px 0;
   margin: 0;
 }
 
 .article small {
-  font-size: 14px;
+  font-size: 12px;
   color: gray;
 }
 
@@ -265,7 +276,7 @@ Main container with major content sections
 
 .funds-top h2 {
   margin: 12px 15px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .funds-top h2:first-of-type {
@@ -278,6 +289,7 @@ Main container with major content sections
 
 .funds-top small {
   color: gray;
+  font-size: 12px;
 }
 
 .funds-img {
@@ -291,14 +303,27 @@ Main container with major content sections
   flex: 0 1 33.33%;
   border-bottom: 1px solid rgba(255, 67, 34, 0.404);
   padding: 10px;
-  background-color: rgba(255, 67, 34, 0.007);
+  background-color: rgba(255, 67, 34, 0.027);
+}
+
+.funds-center h4 {
+  font-size: 14px;
+  font-weight: 100;
 }
 
 .funds-bottom {
   flex: 0 1 33.33%;
   padding: 10px;
-  background-color: rgba(255, 67, 34, 0.007);
+  background-color: rgba(255, 67, 34, 0.027);
 }
+
+.funds-bottom small {
+  font-size: 11px;
+}
+
+/****************************
+Additional topics section  
+*****************************/
 
 .topics {
   height: 1800px;
@@ -308,7 +333,174 @@ Main container with major content sections
 
 .topic {
   flex: 0 1 33.33%;
-  border: 1px dotted rgb(0, 109, 128);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic .titles {
+  margin: 10px 0;
+}
+
+.topic-hero {
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  padding-bottom: 10px;
+}
+
+
+.topic-hero > * {
+  margin: 2px 10px;;
+}
+
+.topic-hero small {
+  color: rgb(173, 173, 173);
+  font-size: 11px;
+}
+
+/* Backgrounds for topic hero */
+.topic-hero1 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero2 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero3 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero4 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic4.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero5 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic5.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero6 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic6.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero7 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic7.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero8 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic8.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.topic-hero9 {
+  background-image: linear-gradient(rgba(172, 172, 172, 0.288), rgb(0, 0, 0)), url(images/topics/topic9.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Sub topic with image */
+
+.topic-sub {
+  height: 100px;
+  background-color: rgba(255, 67, 34, 0.103);
+  padding-left: 10px;
+  color: rgb(250, 60, 26); 
+}
+
+.topic-sub > * {
+  margin: 0;
+}
+
+.topic-sub h5 {
+  padding-top: 12px;
+  font-weight: 100;
+}
+
+.topic-sub h4 {
+  padding-top: 5px;
+  font-size: 13px;
+}
+
+.thumb {
+  height: 100px;
+  width: 100px;
+  float: right;
+}
+
+/* Thumb background for topic sub */
+
+.thumb1 {
+  background: url(images/latest/latest1.png) 50% 50% no-repeat;
+  background-size:150%;
+}
+
+.thumb2 {
+  background: url(images/latest/latest2.png) 50% 50% no-repeat;
+  background-size:200%;
+}
+
+.thumb3 {
+  background: url(images/latest/latest3.png) 50% 50% no-repeat;
+  background-size:180%;
+}
+
+.thumb4 {
+  background: url(images/latest/latest5.png) 50% 50% no-repeat;
+  background-size:180%;
+}
+
+.thumb5 {
+  background: url(images/latest/latest6.png) 50% 50% no-repeat;
+  background-size:180%;
+}
+
+.thumb6 {
+  background: url(images/latest/latest7.png) 50% 50% no-repeat;
+  background-size:180%;
+}
+
+.thumb7 {
+  background: url(images/latest/latest8.png) 50% 50% no-repeat;
+  background-size:200%;
+}
+
+.thumb8 {
+  background: url(images/latest/latest1.png) 50% 50% no-repeat;
+  background-size:150%;
+}
+
+.thumb9 {
+  background: url(images/latest/latest2.png) 50% 50% no-repeat;
+  background-size:200%;
+}
+
+.topic ul {
+  padding-left: 20px;
+  font-size: 12px;
+  font-weight: 100;
+  color: rgb(83, 83, 83);
+}
+
+.topic li {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.144);
+  padding: 10px 0;
 }
 
 .latest-deals {
@@ -320,7 +512,6 @@ Main container with major content sections
 .deal {
   flex: 0 1 25%;
   border: 1px dotted rgb(128, 77, 0);
-
 }
 
 footer {
