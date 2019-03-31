@@ -160,7 +160,31 @@ nav {
     font-size: 40px;
     margin: 0;
   }
-  
+}
+
+@media only screen and (max-width: 655px) {
+
+  header {
+    height: 950px;
+  }
+
+  .hero {
+    display: block;
+    flex-direction: column;
+  }
+
+  .main-hero {
+    height: 300px
+  }
+
+  .hero-text h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .side-hero {
+    height: 600px;
+  }
 }
 
 /* 
@@ -356,6 +380,24 @@ Main container with major content sections
   }
 }
 
+@media only screen and (max-width: 655px) {
+
+  .latest-news {
+    height: 850px;
+  }
+
+  .article {
+    flex: 0 1 100%;
+  }
+
+  .art-img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 5px;
+  }
+}
+
 /************************** 
   Latesting funding section 
 ***************************/
@@ -435,6 +477,13 @@ Main container with major content sections
   }
 }
 
+@media only screen and (max-width: 655px) {
+  .latest-funding {
+    flex-direction: column;
+    height: auto;
+  }
+}
+
 /****************************
 Additional topics section  
 *****************************/
@@ -456,6 +505,13 @@ Additional topics section
 {
   .topic {
     flex: 0 1 50%;
+  }
+}
+
+@media only screen and (max-width: 655px)
+{
+  .topic {
+    flex: 0 1 100%;
   }
 }
 
@@ -731,6 +787,24 @@ Latest deals section
   .deals-img {
     margin-bottom: 0;
     padding-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 655px) {
+
+  .latest-news {
+    height: 850px;
+  }
+
+  .deal {
+    flex: 0 1 100%;
+  }
+
+  .deals-img {
+    float: left;
+    width: 75px;
+    height: 75px;
+    margin-right: 5px;
   }
 }
 
