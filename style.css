@@ -20,6 +20,10 @@ body {
   line-height: 30px;
 }
 
+.titles:hover {
+  color: black;
+  cursor: pointer;
+}
 /*************************************
   Header with hero and navigation bar
 **************************************/
@@ -318,13 +322,27 @@ Main container with major content sections
   margin: 0;
 }
 
+.article h4:hover {
+  cursor: pointer;
+  color: rgb(255, 67, 34);
+}
+
 .article small {
   font-size: 12px;
   color: gray;
 }
 
+.article small:hover {
+  cursor: pointer;
+  color:black;
+}
+
 .art-img {
   height: 60%;
+}
+
+.art-img:hover {
+  cursor: pointer;
 }
 
 
@@ -441,6 +459,10 @@ Main container with major content sections
   background-image: linear-gradient(rgb(255, 67, 34) 40%,rgba(255,68,34,.08)40% );
 }
 
+.funds-top:hover {
+  cursor: pointer;
+}
+
 .funds-top h2 {
   margin: 12px 15px;
   font-size: 18px;
@@ -549,6 +571,10 @@ Additional topics section
   padding-bottom: 10px;
 }
 
+.topic-hero:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 
 .topic-hero > * {
   margin: 2px 10px;;
@@ -701,6 +727,11 @@ Additional topics section
   padding: 10px 0;
 }
 
+.topic li:hover {
+  cursor: pointer;
+  color:black;
+}
+
 /********************
 Latest deals section
 *********************/
@@ -724,6 +755,11 @@ Latest deals section
   display: inline-block;
 }
 
+.deal h4:hover {
+  cursor: pointer;
+  color: rgb(255, 67, 34);
+}
+
 .deal h5 {
   color: gray;
   font-size: 15px;
@@ -738,6 +774,10 @@ Latest deals section
 .deals-img {
   height: 180px;
   margin-bottom: 10px;
+}
+
+.deals-img:hover {
+  cursor: pointer;
 }
 
 .deals-img1 {
@@ -867,6 +907,11 @@ footer {
   margin: 0 10px;
   color: rgb(221, 221, 221);
   font-size: 10px;
+}
+
+.social ul li:hover {
+  color: white;
+  cursor: pointer;
 }
 
 .copyright {
