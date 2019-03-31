@@ -28,6 +28,12 @@ header {
   height: 600px;
 }
 
+@media only screen and (max-width: 1000px) {
+  header {
+    height: 500px;
+  }
+}
+
 /*******************  
 FIXED NAV BAR WITH LINKS AND SEARCH
 ********************/
@@ -78,7 +84,6 @@ nav {
   height: 100%;
   margin-top: 1px;
   color: white;
-
 }
 
 .main-hero {
@@ -106,9 +111,12 @@ nav {
   margin-right: 15px;
 }
 
+
 .hero-text {
-  align-self: flex-end;
-  margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px 10px;
 }
 
 .hero-text h2 {
@@ -122,6 +130,7 @@ nav {
 
 .hero-text small {
   color: rgb(189, 188, 188);
+  font-size: 12px;
 }
 
 
@@ -130,9 +139,32 @@ nav {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1000px) {
+  .main-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero/main-hero.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+  }
+
+  .main-hero:hover {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/hero/main-hero.png);  
+  }
+
+  .main-hero h1,
+  .main-hero h5 {
+    display: none;
+  }
+  
+  .hero-text h2 {
+    font-size: 40px;
+    margin: 0;
+  }
+  
+}
 
 /* 
-  side hero
+side hero
 */
 .side-hero {
   flex: 0 1 35%;
@@ -156,6 +188,7 @@ nav {
 
 .side-hero-each small {
   color: rgb(189, 188, 188);
+  font-size: 12px;
 }
 
 .side-hero-1 {
@@ -180,6 +213,18 @@ nav {
 .side-hero-2:hover {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/hero/sidehero2.png);
   cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+
+  .side-hero-each h2 {
+    font-size: 18px;
+  }
+  
+  .side-hero-each h4 {
+    font-size: 12px;
+  }
+
 }
 
 /******** 
@@ -210,7 +255,7 @@ Main container with major content sections
 /* Latest news */
 
 .latest-news {
-  height:500px;
+  height:550px;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
@@ -219,6 +264,7 @@ Main container with major content sections
 .article {
   flex: 0 1 25%;
   padding: 10px;
+  margin-bottom: 10px;
 }
 
 .article h4 {
@@ -285,6 +331,31 @@ Main container with major content sections
   background-size: cover;
 }
 
+@media only screen and (max-width: 1000px) {
+  .latest-news {
+    height: 650px;
+  }
+  
+  .article {
+    flex: 0 1 33.33%;
+  }
+
+  .art-img {
+    height: 65%;
+  }
+
+  .article h4 {
+    font-size: 13px;
+    padding-bottom: 0;
+    margin: 0;
+    line-height: 19px;
+  }
+  
+  .article small {
+    font-size: 10px;
+  }
+}
+
 /************************** 
   Latesting funding section 
 ***************************/
@@ -301,7 +372,6 @@ Main container with major content sections
   flex-direction: column;
   padding: 7px;
 }
-
 
 .funds-top {
   flex: 0 1 33.33%;
@@ -355,6 +425,16 @@ Main container with major content sections
   font-size: 11px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .funds:last-of-type {
+    display: none;
+  }
+
+  .funds {
+    flex: 0 1 33.33%;
+  }
+}
+
 /****************************
 Additional topics section  
 *****************************/
@@ -370,6 +450,13 @@ Additional topics section
   padding: 10px;
   display: flex;
   flex-direction: column;
+}
+
+@media only screen and (max-width: 1000px)
+{
+  .topic {
+    flex: 0 1 50%;
+  }
 }
 
 .topic .titles {
@@ -542,7 +629,6 @@ Latest deals section
 *********************/
 
 .latest-deals {
-  height: 600px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -550,6 +636,7 @@ Latest deals section
 .deal {
   flex: 0 1 25%;
   padding: 0 10px;
+  margin-bottom: 5px;
 }
 
 .deal > * {
@@ -622,6 +709,29 @@ Latest deals section
   background-image: url(images/topics/deals/deal8.png);
   background-size: contain;
   background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 1000px) {
+  .deal {
+    flex: 0 1 33.33%;
+  }
+  
+  .deal h4 {
+    font-size: 14px;
+  }
+
+  .deal h5 {
+    font-size: 12px;
+  }
+  
+  .deal h6 {
+    font-size: 11px;
+  }
+
+  .deals-img {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 /**********************
