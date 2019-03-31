@@ -362,6 +362,7 @@ Additional topics section
 .topics {
   display:flex;
   flex-wrap: wrap;
+  margin-bottom: 50px;
 }
 
 .topic {
@@ -548,21 +549,129 @@ Latest deals section
 
 .deal {
   flex: 0 1 25%;
-  border: 1px dotted rgb(128, 77, 0);
+  padding: 0 10px;
 }
 
+.deal > * {
+  margin: 0;
+}
+
+.deal h5, h6 {
+  display: inline-block;
+}
+
+.deal h5 {
+  color: gray;
+  font-size: 15px;
+}
+
+.deal h6 {
+  color: rgb(190, 188, 188);
+  text-decoration: line-through;
+}
+
+
+.deals-img {
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.deals-img1 {
+  background-image: url(images/topics/deals/deal1.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img2 {
+  background-image: url(images/topics/deals/deal2.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img3 {
+  background-image: url(images/topics/deals/deal3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img4 {
+  background-image: url(images/topics/deals/deal4.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img5 {
+  background-image: url(images/topics/deals/deal5.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img6 {
+  background-image: url(images/topics/deals/deal6.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img7 {
+  background-image: url(images/topics/deals/deal7.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.deals-img8 {
+  background-image: url(images/topics/deals/deal8.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/**********************
+FOOTER WITH SOCIAL AND COPYRIGHTS  
+***********************/
+
 footer {
-  height: 280px;
   display: flex;
   flex-direction: column;
 }
 
 .social {
   flex: 0 1 60%;
-  border: 1px dotted purple;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #131313;
+}
+
+.social-banner {
+  height: 50px;
+  width: auto;
+  background-image: url(images/icons/bannerbuttons.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 30px;
+}
+
+.social ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding-right: 25px;
+}
+
+.social ul li {
+  margin: 0 10px;
+  color: rgb(221, 221, 221);
+  font-size: 10px;
 }
 
 .copyright {
   flex: 0 1 40%;
-  border: 1px dotted rgb(0, 128, 0);
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+  padding: 10px 0;
+  color: white;
+  font-size: 14px;
+  background-color: rgb(14, 14, 14);
 }
