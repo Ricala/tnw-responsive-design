@@ -78,6 +78,27 @@ nav {
   box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.274);
 }
 
+.menu {
+  background-image: url(images/icons/menu.png);
+  height: 40px;
+  width: 40px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: none;
+}
+
+@media only screen and (max-width: 655px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu {
+    display: block;
+  }
+}
+
+/* HERO SECTION, MAIN AND 2 SIDES */
+
 .hero {
   display: flex;
   padding-top: 42px;
